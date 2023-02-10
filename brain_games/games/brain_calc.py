@@ -1,4 +1,4 @@
-import brain_games.games.templates.conversation_templates as tmp
+import templates.conversation_templates as tmp
 import prompt
 from random import randint, choice
 
@@ -13,7 +13,7 @@ def main():
     for _ in range(3):
         operand1 = str(randint(1, 30))
         operand2 = str(randint(1, 30))
-        operator = choice(['+', '-', '/', '*'])
+        operator = choice(['+', '-', '*'])
 
         print('Question: {} {} {}'.format(operand1, operator, operand2))
         user_answer = prompt.string('Your answer: ')
