@@ -4,14 +4,15 @@ import prompt
 import brain_games.games.templates.conversation_templates as tmp
 
 
+def right_answer(num: int) -> str:
+    if num % 2 == 0:
+        return 'yes'
+    return 'no'
+
+
 def main():
     name = tmp.greetings()
     print('Answer "yes" if the number is even, otherwise answer "no"')
-
-    def right_answer(num: int) -> str:
-        if num % 2 == 0:
-            return 'yes'
-        return 'no'
 
     for _ in range(3):
         number = randint(1, 100)

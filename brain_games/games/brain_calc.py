@@ -3,12 +3,13 @@ import prompt
 from random import randint, choice
 
 
+def right_answer(num1: str, num2: str, operator: str) -> str:
+    return str(eval(num1 + operator + num2))
+
+
 def main():
     name = tmp.greetings()
     print("What is result of the expression?")
-
-    def right_answer(num1: str, num2: str, operator: str) -> str:
-        return str(eval(num1 + operator + num2))
 
     for _ in range(3):
         operand1 = str(randint(1, 30))
