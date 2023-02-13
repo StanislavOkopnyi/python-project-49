@@ -7,4 +7,5 @@
 * [Установка и запуск brain-even. Победа и поражение игрока](https://asciinema.org/a/F7gZxyMC02InzQvbVn56Qzaxs)
 * [Установка и запуск brain-calc. Победа и поражение игрока](https://asciinema.org/a/lFb8NMWf06fQncytfOXiK5up0)
 * [Установка и запуск brain-gcd. Победа и поражение игрока](https://asciinema.org/a/svYgDqdOvJSXMfMqZUmX0BSWp)
+* [Установка и запуск brain-progression. Победа и поражение игрока](https://asciinema.org/a/xZ5LD8uyE3CrBgZjhb5Wvxl3B)
 

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import brain_games.games.templates.conversation_templates as tmp
 from random import randint
 from itertools import product
