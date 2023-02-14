@@ -22,7 +22,7 @@ def main():
         number1 = randint(1, 100)
         number2 = randint(1, 100)
 
-        print('Question: {}, {}'.format(number1, number2))
+        print('Question: {} {}'.format(number1, number2))
         user_answer = prompt.string('Your answer: ')
 
         if tmp.is_response_correct(user_answer,
