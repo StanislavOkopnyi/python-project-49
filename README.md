@@ -13,15 +13,15 @@
 * Установите пакет с игрой: make package-install
 
 #### Для того, чтобы запустить игру достаточно ввести в терминал:
-* brain-even - Определение четного числа.
-* brain-calc - Калькулятор. Арифметические выражения, которые необходимо вычислить.
-* brain-gcd - Определение наибольшего общего делителя.
-* brain-progression - Прогрессия. Поиск пропущенных чисел в последовательности чисел.
-* brain-prime - Определение простого числа.
+* **brain-even** - Определение четного числа.
+* **brain-calc** - Калькулятор. Арифметические выражения, которые необходимо вычислить.
+* **brain-gcd** - Определение наибольшего общего делителя.
+* **brain-progression** - Прогрессия. Поиск пропущенных чисел в последовательности чисел.
+* **brain-prime** - Определение простого числа.
 
-* [Установка и запуск brain-even. Победа и поражение игрока](https://asciinema.org/a/F7gZxyMC02InzQvbVn56Qzaxs)
-* [Установка и запуск brain-calc. Победа и поражение игрока](https://asciinema.org/a/lFb8NMWf06fQncytfOXiK5up0)
-* [Установка и запуск brain-gcd. Победа и поражение игрока](https://asciinema.org/a/svYgDqdOvJSXMfMqZUmX0BSWp)
-* [Установка и запуск brain-progression. Победа и поражение игрока](https://asciinema.org/a/xZ5LD8uyE3CrBgZjhb5Wvxl3B)
-* [Установка и запуск brain-prime. Победа и поражение игрока](https://asciinema.org/a/wLyMnQySl3WE4LQcAJtdJ9BNn)
+[Установка и запуск brain-even. Победа и поражение игрока](https://asciinema.org/a/F7gZxyMC02InzQvbVn56Qzaxs)
+[Установка и запуск brain-calc. Победа и поражение игрока](https://asciinema.org/a/lFb8NMWf06fQncytfOXiK5up0)
+[Установка и запуск brain-gcd. Победа и поражение игрока](https://asciinema.org/a/svYgDqdOvJSXMfMqZUmX0BSWp)
+[Установка и запуск brain-progression. Победа и поражение игрока](https://asciinema.org/a/xZ5LD8uyE3CrBgZjhb5Wvxl3B)
+[Установка и запуск brain-prime. Победа и поражение игрока](https://asciinema.org/a/wLyMnQySl3WE4LQcAJtdJ9BNn)
 
