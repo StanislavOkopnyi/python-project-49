@@ -12,7 +12,7 @@ def right_answer(num: int) -> str:
 
 def main():
     name = tmp.greetings()
-    print('Answer "yes" if the number is even, otherwise answer "no"')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
 
     for _ in range(3):
         number = randint(1, 100)
