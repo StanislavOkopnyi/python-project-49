@@ -25,8 +25,11 @@ def main():
         print('Question: {} {}'.format(number1, number2))
         user_answer = prompt.string('Your answer: ')
 
-        if tmp.is_response_correct(user_answer,
-                                   right_answer(number1, number2), name):
+        if tmp.is_response_correct(
+                user_answer,
+                right_answer(number1, number2),
+                name
+        ):
             continue
         else:
             break

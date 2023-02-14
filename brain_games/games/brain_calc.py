@@ -19,10 +19,11 @@ def main():
         print('Question: {} {} {}'.format(operand1, operator, operand2))
         user_answer = prompt.string('Your answer: ')
 
-        if tmp.is_response_correct(user_answer,
-                                   right_answer(operand1, operand2, operator),
-                                   name
-                                   ):
+        if tmp.is_response_correct(
+            user_answer,
+            right_answer(operand1, operand2, operator),
+            name
+        ):
             continue
         else:
             break
