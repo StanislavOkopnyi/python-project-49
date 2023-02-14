@@ -9,7 +9,7 @@ def right_answer(num1: str, num2: str, operator: str) -> str:
 
 def main():
     name = tmp.greetings()
-    print("What is result of the expression?")
+    print("What is the result of the expression?")
 
     for _ in range(3):
         operand1 = str(randint(1, 30))
