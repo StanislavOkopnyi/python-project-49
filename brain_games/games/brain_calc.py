@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import brain_games.games.templates.conversation_templates as tmp
 import prompt
 from random import randint, choice
