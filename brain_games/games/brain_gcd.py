@@ -1,8 +1,7 @@
-#!/usr/bin/env python3
-import brain_games.games.templates.conversation_templates as tmp
 from random import randint
 from itertools import product
-import prompt
+
+QUESTION = 'Find the greatest common divisor of given numbers.'
 
 
 def right_answer(num1: int, num2: int) -> str | None:
@@ -14,28 +13,8 @@ def right_answer(num1: int, num2: int) -> str | None:
             return str(div1)
 
 
-def main():
-    name = tmp.greetings()
-    print('Find the greatest common divisor of given numbers.')
-
-    for _ in range(3):
-        number1 = randint(1, 100)
-        number2 = randint(1, 100)
-
-        print('Question: {} {}'.format(number1, number2))
-        user_answer = prompt.string('Your answer: ')
-
-        if tmp.is_response_correct(
-                user_answer,
-                right_answer(number1, number2),
-                name
-        ):
-            continue
-        else:
-            break
-    else:
-        tmp.win(name)
-
-
-if __name__ == "__main__":
-    main()
+def game() -> str | None:
+    number1 = randint(1, 100)
+    number2 = randint(1, 100)
+    print('Question: {} {}'.format(number1, number2))
+    return right_answer(number1, number2)

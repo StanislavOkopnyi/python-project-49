@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
-import brain_games.games.templates.conversation_templates as tmp
-import prompt
 from math import sqrt
 from random import randint
+
+
+QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def right_answer(num: int) -> str:
@@ -14,22 +14,7 @@ def right_answer(num: int) -> str:
     return "yes"
 
 
-def main():
-    name = tmp.greetings()
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-
-    for _ in range(3):
-        number = randint(1, 100)
-        print(f"Question: {number}")
-        user_answer = prompt.string("Your answer: ")
-
-        if tmp.is_response_correct(user_answer, right_answer(number), name):
-            continue
-        else:
-            break
-    else:
-        tmp.win(name)
-
-
-if __name__ == "__main__":
-    main()
+def game() -> str:
+    number = randint(1, 100)
+    print(f"Question: {number}")
+    return right_answer(number)
