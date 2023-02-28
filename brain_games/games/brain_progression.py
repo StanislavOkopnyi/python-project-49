@@ -9,8 +9,8 @@ PROGRESSION_LENGTH_SPREAD = (5, 10)
 
 def get_answer_and_question() -> tuple:
     progression_start = randint(*PROGRESSION_START_SPREAD)
-    progression_step = randint(*PROGRESSION_LENGTH_SPREAD)
-    progression_length = randint(*PROGRESSION_STEP_SPREAD)
+    progression_step = randint(*PROGRESSION_STEP_SPREAD)
+    progression_length = randint(*PROGRESSION_LENGTH_SPREAD)
     element_to_guess = randint(0, progression_length - 1)
 
     element_of_progression = progression_start
