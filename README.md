@@ -10,7 +10,7 @@
 #### Для установки игры:
 * Клонируйте репозиторий при помощи команды: `git clone https://github.com/StanislavOkopnyi/python-project-49` 
 * Перейдите в папку с игрой: `cd python-project-49/`
-* Установите пакет с игрой: `make package-install`
+* Установите пакет с игрой: `make build package-install`
 
 #### Для того, чтобы запустить игру достаточно ввести в терминал:
 * **brain-even** - Определение четного числа.
