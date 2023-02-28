@@ -1,15 +1,19 @@
 from random import randint
 
-QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+EVEN_ANSWER = "yes"
+OTHERWISE_ANSWER = "no"
+NUMBER_SPREAD = (1, 100)
+
+QUESTION = (f'Answer "{EVEN_ANSWER}" if the number is even, '
+            f'otherwise answer "{OTHERWISE_ANSWER}".')
 
 
-def right_answer(num: int) -> str:
+def get_right_answer(num: int) -> str:
     if num % 2 == 0:
-        return "yes"
-    return "no"
+        return EVEN_ANSWER
+    return OTHERWISE_ANSWER
 
 
-def game() -> str:
-    number = randint(1, 100)
-    print('Question: {}'.format(number))
-    return right_answer(number)
+def get_answer_and_question() -> tuple:
+    number = randint(*NUMBER_SPREAD)
+    return get_right_answer(number), (f'Question: {number}')

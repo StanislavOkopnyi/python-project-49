@@ -2,19 +2,23 @@ from math import sqrt
 from random import randint
 
 
-QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+PRIME_ANSWER = "yes"
+OTHERWISE_ANSWER = "no"
 
 
-def right_answer(num: int) -> str:
+QUESTION = (f'Answer "{PRIME_ANSWER}" if given number is prime. '
+            f'Otherwise answer "{OTHERWISE_ANSWER}".')
+
+
+def get_right_answer(num: int) -> str:
     if num in [1, 2]:
-        return "yes"
+        return PRIME_ANSWER
     for div in range(2, int(sqrt(num) + 1)):
         if num % div == 0:
-            return "no"
-    return "yes"
+            return OTHERWISE_ANSWER
+    return PRIME_ANSWER
 
 
-def game() -> str:
+def get_answer_and_question() -> tuple:
     number = randint(1, 100)
-    print(f"Question: {number}")
-    return right_answer(number)
+    return get_right_answer(number), (f"Question: {number}")
