@@ -1,5 +1,8 @@
 import prompt
 
+FIRST_ANSWER = "yes"
+SECOND_ANSWER = "no"
+
 
 def start_game(game, games_num: int = 3):
 
