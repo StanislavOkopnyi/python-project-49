@@ -1,11 +1,12 @@
 from math import sqrt
 from random import randint
 from brain_games.engine import FIRST_ANSWER, SECOND_ANSWER
-from brain_games.bool_to_str import bool_to_str
 
 
 QUESTION = (f'Answer "{FIRST_ANSWER}" if given number is prime. '
             f'Otherwise answer "{SECOND_ANSWER}".')
+
+NUMBER_SPREAD = (1, 100)
 
 
 def is_prime(num: int) -> bool:
@@ -18,5 +19,5 @@ def is_prime(num: int) -> bool:
 
 
 def get_answer_and_question() -> tuple:
-    number = randint(1, 100)
-    return bool_to_str(is_prime(number)), (f"Question: {number}")
+    number = randint(*NUMBER_SPREAD)
+    return is_prime(number), (f"Question: {number}")

@@ -19,6 +19,6 @@ def get_answer_and_question() -> tuple:
         progression.append(str(element_of_progression))
         element_of_progression += progression_step
 
-    right_answer = progression[element_to_guess]
+    right_answer = int(progression[element_to_guess])
     progression[element_to_guess] = ".."
     return right_answer, ("Question: " + " ".join(progression))
