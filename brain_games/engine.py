@@ -32,9 +32,9 @@ def start_game(game, games_num: int = 3):
         right_answer, question = game.get_answer_and_question()
         right_answer = convert_answer_to_str(right_answer)
         print(question)
-        user_answer = prompt.string('Your answer: ').lower()
+        user_answer = prompt.string('Your answer: ')
 
-        if user_answer != right_answer:
+        if user_answer.lower() != right_answer:
             print(f"'{user_answer}' is wrong answer ;(.", end="")
             print(f" Correct answer was '{right_answer}'.")
             print(f"Let's try again, {name}!")
