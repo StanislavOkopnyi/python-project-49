@@ -42,4 +42,4 @@ def start_game(game, games_num: int = 3):
 
         print('Correct!')
 
-    print("Congratulations, {}!".format(name))
+    print(f"Congratulations, {name}!")
