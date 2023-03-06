@@ -1,14 +1,14 @@
 from typing import Any
 import prompt
 
-FIRST_ANSWER = "YES"
-SECOND_ANSWER = "NO"
+YES = "yes"
+NO = "no"
 
 
 def bool_to_str(answer: bool) -> str:
     if answer:
-        return FIRST_ANSWER
-    return SECOND_ANSWER
+        return YES
+    return NO
 
 
 def convert_answer_to_str(answer: Any) -> str | None:
@@ -34,7 +34,7 @@ def start_game(game, games_num: int = 3):
         print(question)
         user_answer = prompt.string('Your answer: ')
 
-        if user_answer.upper() != right_answer:
+        if user_answer.lower() != right_answer:
             print(f"'{user_answer}' is wrong answer ;(.", end="")
             print(f" Correct answer was '{right_answer}'.")
             print(f"Let's try again, {name}!")
