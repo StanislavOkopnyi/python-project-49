@@ -1,10 +1,10 @@
 from math import sqrt
 from random import randint
-from brain_games.engine import FIRST_ANSWER, SECOND_ANSWER
+from brain_games.engine import NO, YES
 
 
-QUESTION = (f'Answer "{FIRST_ANSWER}" if given number is prime. '
-            f'Otherwise answer "{SECOND_ANSWER}".')
+QUESTION = (f'Answer "{YES}" if given number is prime. '
+            f'Otherwise answer "{NO}".')
 
 NUMBER_SPREAD = (1, 100)
 

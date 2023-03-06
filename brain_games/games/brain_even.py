@@ -1,11 +1,11 @@
 from random import randint
-from brain_games.engine import FIRST_ANSWER, SECOND_ANSWER
+from brain_games.engine import NO, YES
 
 
 NUMBER_SPREAD = (1, 100)
 
-QUESTION = (f'Answer "{FIRST_ANSWER}" if the number is even, '
-            f'otherwise answer "{SECOND_ANSWER}".')
+QUESTION = (f'Answer "{YES}" if the number is even, '
+            f'otherwise answer "{NO}".')
 
 
 def is_even(num: int) -> bool:
