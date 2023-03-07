@@ -8,12 +8,14 @@ QUESTION = (f'Answer "{YES}" if the number is even, '
             f'otherwise answer "{NO}".')
 
 
-def is_even(num: int) -> bool:
+def is_even(num: int) -> str:
     if num % 2 == 0:
-        return True
-    return False
+        return YES
+    return NO
 
 
 def get_answer_and_question() -> tuple:
     number = randint(*NUMBER_SPREAD)
-    return is_even(number), (f'Question: {number}')
+    right_answer = is_even(number)
+    task = (f'Question: {number}')
+    return right_answer, task

@@ -5,21 +5,6 @@ YES = "yes"
 NO = "no"
 
 
-def bool_to_str(answer: bool) -> str:
-    if answer:
-        return YES
-    return NO
-
-
-def convert_answer_to_str(answer: Any) -> str | None:
-    if type(answer) is bool:
-        return bool_to_str(answer)
-    elif type(answer) is int:
-        return str(answer)
-    elif type(answer) is str:
-        return answer
-
-
 def start_game(game, games_num: int = 3):
 
     print('Welcome to the Brain Games!')
